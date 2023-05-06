@@ -1,0 +1,31 @@
+ <mvc:View controllerName="employee1.employeedatafilterproject.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+    <Page id="page" title="{i18n>title}" titleAlignment = "Center" showNavButton = "true" navButtonPress = "onNavBack">
+        <content >
+
+			<!-- <smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="employee1" >
+				<smartFilterBar:controlConfiguration>
+
+					<smartFilterBar:ControlConfiguration id = "idName" visibleInAdvancedArea="true" label = "Name" key = "Name"/>
+                    <smartFilterBar:ControlConfiguration id = "idAge" visibleInAdvancedArea="true" label = " Age " key = "Age"/>
+                    <smartFilterBar:ControlConfiguration id = "idSal" visibleInAdvancedArea="true" label = "Salary " key = "Salary"/>
+					
+				</smartFilterBar:controlConfiguration>				
+			</smartFilterBar:SmartFilterBar>
+
+			<smartTable:SmartTable id="idSmartTable" smartFilterId="idSmartFilterBar" entitySet="employee1" tableType="ResponsiveTable" 
+			initiallyVisibleFields="Name, Position, Contact" enableAutoBinding="true" class="sapUiResponsiveContentPadding" enableAutoColumnWidth="true" editTogglable="true" app:useSmartToggle="true">
+				<smartTable:layoutData>
+					<FlexItemData growFactor="1" baseSize="0%"/>
+				</smartTable:layoutData>
+				<Table id = "idResponsiveTable" selectionChange = "handleSelectionChange" mode = "SingleSelectMaster" />
+			</smartTable:SmartTable> -->
+
+        </content>
+    </Page>
+</mvc:View>

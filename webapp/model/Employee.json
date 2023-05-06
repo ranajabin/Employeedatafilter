@@ -1,0 +1,68 @@
+{
+    "employee1": [
+        {
+            "Name": "Amit",
+            "Position": "System Architect",
+            "Contact": "amit123@example.com",
+            "Age": "30",
+            "Address": "Bangalore",
+            "Salary": "200000"
+        },
+        {
+            "Name": "Rohit",
+            "Position": "Software Engineer",
+            "Contact": "rohit32@gmail.com",
+            "Age": "23",
+            "Address": "Lucknow",
+            "Salary": "340000"
+        },
+        {
+            "Name": "Sneha",
+            "Position": "Office Manager",
+            "Contact": "sneha98@gmail.com",
+            "Age": "34",
+            "Address": "Tamil Nadu",
+            "Salary": "500000"
+        },
+        {
+            "Name": "lokesh",
+            "Position": "Team Lead",
+            "Contact": "lokesh345@gmail.com",
+            "Age": "32",
+            "Address": "Pune",
+            "Salary": "400000"
+        },
+        {
+            "Name": "Durga",
+            "Position": "Software Developer",
+            "Contact": "durga432@gmail.com",
+            "Age": "28",
+            "Address": "Punjab",
+            "Salary": "350000"
+        },
+        {
+            "Name": "Suman",
+            "Position": "Intern",
+            "Contact": "suman305@gmail.com",
+            "Age": "38",
+            "Address": "Pune",
+            "Salary": "60000000"
+        },
+        {
+            "Name": "Pavitra",
+            "Position": "Human Resource",
+            "Contact": "pavitra545@gmail.com",
+            "Age": "43",
+            "Address": "Lucknow",
+            "Salary": "350000"
+        },
+        {
+            "Name": "Rehan",
+            "Position": "ABAP Developer",
+            "Contact": "rehan598@gmail.com",
+            "Age": "40",
+            "Address": "Bangalore",
+            "Salary": "8000000"
+        }
+    ]
+}

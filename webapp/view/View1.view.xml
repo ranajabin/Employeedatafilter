@@ -1,0 +1,182 @@
+<mvc:View controllerName="employee1.employeedatafilterproject.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l = "sap.ui.layout">
+    <Page id="page" title="Employee Records" titleAlignment="Center" >
+    	<headerContent>
+			<Button icon="sap-icon://navigation-right-arrow" tooltip="Next Page" press = "onNavNext" />
+		</headerContent>
+        <content>
+
+          <VBox alignContent="End" alignItems="End" >
+              <HBox>
+               <!-- <Button text = "Go"  type = "Emphasized" visible = "false"  id = "_idbtn1" press = "onPressGo" /> -->
+               <Button text = "Show-Filters"  type = "Emphasized" press = "onShowFilters" />
+               <SearchField width="100%" search="onFilterSearch" /> 
+             </HBox>
+          </VBox>
+          
+           	<!-- <l:VerticalLayout
+		class="sapUiContentPadding"
+		width = "100%"> -->
+        <l:HorizontalLayout 
+        class="sapUiContentPadding">
+
+         <VBox>
+         <Label text = "Name:" visible="false" id = "_idNam" />
+         <MultiComboBox 
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			width="200px"
+            id = "_idName"
+            visible="false"
+			items="{Table1>/employee1}">
+			
+            <core:Item key="{/employee1>Name}" text="{Table1>Name}"/>
+           
+		</MultiComboBox>
+        </VBox>
+
+         <VBox>
+         <Label text = "Position:" visible="false"  id = "_idPos" />
+		<MultiComboBox
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			width="200px"
+            id = "_idPosition"
+            visible="false"
+			items="{Table1>/employee1}">
+				
+            <core:Item key="{/employee1>Position}" text="{Table1>Position}"/>
+           
+		</MultiComboBox>
+        </VBox>
+
+           <VBox>
+         <Label text = "Contacts:" visible="false" id = "_idCont" />
+        <MultiComboBox
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			width="200px"
+            id = "_idContact"
+            visible="false"
+			items="{Table1>/employee1}">				
+			
+            <core:Item key="{/employee1>Contact}" text="{Table1>Contact}"/>
+           
+		</MultiComboBox>
+        </VBox>
+
+          <VBox>
+         <Label text = "Age:" id = "_idAg" visible = "false" />
+         <MultiComboBox
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			width="200px"
+            id = "_idAge"
+            visible = "false"
+			items="{Table1>/employee1}">
+							
+            <core:Item key="{/employee1>Age}" text="{Table1>Age}"/>
+           
+		</MultiComboBox>
+         </VBox>
+       
+         <VBox>
+         <Label text = "Address:" id = "_idAdrs1" visible = "false" />
+		<MultiComboBox
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			width="200px"
+            id = "_idAdrs"
+            visible = "false"
+			items="{Table1>/employee1}">			
+			
+            <core:Item key="{/employee1>Address}" text="{Table1>Address}"/>
+           
+		</MultiComboBox>
+         </VBox>
+
+         <VBox>          
+         <Label text = "Salary:" id = "_idSal1" visible = "false" />
+        <MultiComboBox
+			selectionChange="handleSelectionChange"
+			selectionFinish="handleSelectionFinish"
+			width="200px"
+            id = "_idSal"
+            visible = "false"
+			items="{Table1>/employee1}">
+			
+            <core:Item key="{/employee1>Salary}" text="{Table1>Salary}"/>
+           
+		</MultiComboBox>
+        </VBox>      
+        
+        </l:HorizontalLayout>        
+        	<!-- </l:VerticalLayout>     -->
+
+            <Table backgroundDesign="Translucent" headerText = "Employee Table:"
+		alternateRowColors="true"
+             id = "Table1" 
+            items =  "{
+			path: 'Table1>/employee1',
+			sorter: {
+				path: 'Name'
+			}
+		}"          
+            width="100%" visible="true" inset="true" contextualWidth="inherit">
+
+             <headerToolbar>
+                        <Toolbar>
+                            <Title text="Employee Table:" />
+                            <ToolbarSpacer />                        
+                          <Button text = "Go"  type = "Emphasized" visible = "false"  id = "_idbtn1" press = "onPressGo" />
+                     </Toolbar>
+            </headerToolbar>
+
+                <columns >
+
+                    <Column width="12em" minScreenWidth="Tablet">
+                        <Text text="Name" />
+                    </Column>
+
+                    <Column width="12em" minScreenWidth="Tablet">
+                        <Text text="Position" />
+                    </Column>
+
+                    <Column width="12em" minScreenWidth="Tablet">
+                        <Text text="Contacts" />
+                    </Column>
+
+                    <Column width="12em" minScreenWidth="Tablet">
+                        <Text text="Age" />
+                    </Column>
+
+                    <Column width="12em" minScreenWidth="Tablet">
+                        <Text text="Address" />
+                    </Column>
+
+                    <Column width="12em" minScreenWidth="Tablet">
+                        <Text text="Salary" />
+                    </Column>
+
+                </columns>
+
+                <items>
+                     <ColumnListItem>
+                      <cells>
+                      <Text text = "{Table1>Name}" />
+                      <Text text = "{Table1>Position}" />
+                      <Text text = "{Table1>Contact}" />
+                      <Text text = "{Table1>Age}" />
+                      <Text text = "{Table1>Address}" />
+                      <Text text = "{Table1>Salary}" />
+                      </cells>
+                      </ColumnListItem>                     
+                   
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
+
